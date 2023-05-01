@@ -164,6 +164,9 @@ import { dataTeam } from '../lib/teams/team-emr-on-eks';
 
 new EmrEksConstruct().build(app, 'emrOnEks', [dataTeam]);
 
+import GravitonConstruct from '../lib/graviton-construct';
+new GravitonConstruct(app, 'graviton');
+
 //--------------------------------------------------------------------------
 // Single Cluster, Secure Ingress Auth using cognito
 //--------------------------------------------------------------------------
